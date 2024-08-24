@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">a</h2>
+    </header>
+    <div class="container-principal">
+        <div>
+            <textarea id="inputText" class="text-area-input" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="text-aviso">Solo letras minúsculas y sin acentos</p>
+            <div class="buttons">
+                <button class="encrypt" onclick="encryptText()">Encriptar</button>
+                <button class="decrypt" onclick="decryptText()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="container-output">
+            <img id="outputImage" src="imagenes/imagen-output.png" alt="Imagen de salida" class="output-image">
+            <p id="outputText" class="text-output"><strong>Ningún mensaje fue encontrado.</strong><br></p>
+            <div class="copy-container">
+                <button class="copy" onclick="copyText()">Copiar</button>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
